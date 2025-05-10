@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import API from "../services/api";
 
 const Register = () => {
-  const [fullName, setFullName] = useState(""); // opcional
+  const [fullName, setFullName] = useState(""); 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMsg, setErrorMsg] = useState("");
@@ -17,7 +17,7 @@ const Register = () => {
       await API.post("/auth/register", {
         email,
         password,
-        // fullName: fullName // si decides usarlo en el backend
+        fullName: fullName
       });
       navigate("/login");
     } catch (err) {
