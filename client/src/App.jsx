@@ -6,19 +6,19 @@ import Home from './pages/Home';
 import EmployeeProfile from './pages/EmployeeProfile';
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        {/*<Route path="/profile" element={<Profile />} />*/} {/* This Page is a placeholder */}
-        <Route path="/" element={<Home />} />
-        <Route path="/employee/:id" element={<EmployeeProfile />} />
-        {/* Catch-all route for 404 */}
-        <Route path="*" element={<div>404 Not Found</div>} />
-      </Routes>
-    </Router>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+                {/*<Route path="/profile" element={<Profile />} />*/} {/* This Page is a placeholder */}
+                <Route path="/" element={<Home />} />
+                <Route path="/employee/:id" element={<EmployeeProfile />} />
+                {/* Catch-all route for 404 */}
+                <Route path="*" element={<div>404 Not Found</div>} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
