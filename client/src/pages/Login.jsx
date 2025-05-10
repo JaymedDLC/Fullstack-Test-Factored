@@ -27,15 +27,17 @@ const Login = () => {
         <div className="flex h-screen bg-black">
             {/* Lado izquierdo */}
             <div className="w-1/2 flex flex-col justify-center items-center text-white p-10">
-                <div className="text-left max-w-xs">
+                <div className="text-left max-w-xs leading-snug tracking-tight">
                     <h2 className="text-2xl font-light">Welcome to FactoredAI</h2>
-                    <h2 className="text-blue-600 text-2xl font-bold mt-2">The industry's most effective</h2>
-                    <p className="text-2xl font-light">community of engineers</p>
+                    <h2 className="text-blue-600 text-2xl font-bold mt-1">
+                        The industry's most effective
+                    </h2>
+                    <h2 className="text-2xl font-light">community of engineers</h2>
                 </div>
                 <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Octicons-mark-github.svg/512px-Octicons-mark-github.svg.png"
-                    alt="Logo"
-                    className="w-20 mt-10"
+                    src="/factored logo white.svg"
+                    alt="Factored Logo"
+                    className="w-48 mt-10"
                 />
                 <p className="text-sm mt-4">figma.com/@designspacee</p>
             </div>
