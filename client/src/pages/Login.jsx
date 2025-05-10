@@ -16,7 +16,7 @@ const Login = () => {
       const res = await API.post("/auth/login", { email, password });
       const { token } = res.data;
       localStorage.setItem("token", token);
-      navigate("/profile");
+      navigate("/");
     } catch (err) {
       console.error("Login failed:", err);
       setErrorMsg(err.response?.data?.error || "Login error");
@@ -28,9 +28,9 @@ const Login = () => {
       {/* Lado izquierdo */}
       <div className="w-1/2 flex flex-col justify-center items-center text-white p-10">
         <div className="text-left max-w-xs">
-          <h2 className="text-2xl font-light">Need webdesign for your business?</h2>
-          <h2 className="text-blue-600 text-2xl font-bold mt-2">Design Spacee</h2>
-          <p className="text-sm mt-2">will help you.</p>
+          <h2 className="text-2xl font-light">Welcome to FactoredAI</h2>
+          <h2 className="text-blue-600 text-2xl font-bold mt-2">The industry's most effective</h2>
+          <p className="text-2xl font-light">community of engineers</p>
         </div>
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Octicons-mark-github.svg/512px-Octicons-mark-github.svg.png"
