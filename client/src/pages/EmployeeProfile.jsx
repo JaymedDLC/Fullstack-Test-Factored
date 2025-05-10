@@ -91,7 +91,7 @@ const EmployeeProfile = () => {
             <div className="relative">
                 {/* Flecha de regreso */}
                 <button
-                    onClick={() => navigate("/")}
+                    onClick={() => navigate("/home")}
                     className="absolute top-4 left-4 text-white text-2xl hover:text-blue-400 transition-colors"
                     aria-label="Go back"
                 >

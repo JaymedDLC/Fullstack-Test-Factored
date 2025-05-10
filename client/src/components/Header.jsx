@@ -11,13 +11,13 @@ const Header = () => {
 
     const handleLogout = () => {
         localStorage.removeItem("token");
-        navigate("/login");
+        navigate("/");
     };
 
     return (
         <header className="bg-black text-white p-4 flex justify-between items-center shadow-md">
             {/* Logo */}
-            <Link to="/">
+            <Link to={isLoggedIn ? "/home" : "/"}>
                 <img
                     src="/factored logo white.svg"
                     alt="Factored Logo"

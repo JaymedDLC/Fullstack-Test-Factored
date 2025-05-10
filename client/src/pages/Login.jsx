@@ -16,7 +16,7 @@ const Login = () => {
             const res = await API.post("/auth/login", { email, password });
             const { token } = res.data;
             localStorage.setItem("token", token);
-            navigate("/");
+            navigate("/home");
         } catch (err) {
             console.error("Login failed:", err);
             setErrorMsg(err.response?.data?.error || "Login error");
