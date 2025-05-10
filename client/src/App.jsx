@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/profile" element={<Profile />} />
+        {/*<Route path="/profile" element={<Profile />} />*/} {/* This Page is a placeholder */}
         <Route path="/" element={<Home />} />
         <Route path="/employee/:id" element={<EmployeeProfile />} />
         {/* Catch-all route for 404 */}

@@ -11,16 +11,16 @@ const Home = () => {
       .catch((err) => console.error("Error loading employees:", err));
   }, []);
 
-  return (
+return (
     <div className="min-h-screen bg-black text-white p-10">
-      <h1 className="text-3xl font-bold mb-6">Our Employees</h1>
-      <div className="flex flex-wrap gap-6">
-        {employees.map((emp) => (
-          <EmployeeCard key={emp._id} employee={emp} />
-        ))}
-      </div>
+        <h1 className="text-3xl font-bold mb-6 text-center">Our Employees</h1>
+        <div className="flex flex-wrap gap-6 justify-center">
+            {employees.map((emp) => (
+                <EmployeeCard key={emp._id} employee={emp} />
+            ))}
+        </div>
     </div>
-  );
+);
 };
 
 export default Home;
